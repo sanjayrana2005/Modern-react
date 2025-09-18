@@ -52,7 +52,7 @@ const Navbar = () => {
             {/* mobile menu item */}
             {
                 isMenuOpen && (
-                    <div className='md:hidden flex flex-col gap-1 bg-white border-t border-gray-200 px-4'>
+                    <div className='md:hidden flex flex-col gap-1 bg-white border-t border-gray-200 px-4 pb-1'>
                         {
                             navLinks.map((link, index) => {
                                 return <a
