@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import CompanyLogo from './components/CompanyLogo'
 import './App.css'
+import PurposeSection from './components/PurposeSection'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Navbar />
         <Hero />
         <CompanyLogo/>
+        <PurposeSection/>
       </div>
     </main>
   )
