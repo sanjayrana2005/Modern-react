@@ -34,8 +34,8 @@ export const features = [
     }
   ]
 
-//   services section
-// const services = [
+  // services section
+// export const services = [
 //     {
 //       icon: <BsStack className="w-8 h-8 text-indigo-600" />,
 //       title: "Web Design",
@@ -64,7 +64,7 @@ export const features = [
 
 //   testimonials section
 
-const testimonials = [
+export const testimonials = [
     {
       id: 1,
       name: "Robin Ayala Doe", 
@@ -105,7 +105,7 @@ const testimonials = [
   ];
 
   // footer section
-  const footerLinks = {
+  export const footerLinks = {
     company: [
       { name: 'About', href: '#' },
       { name: 'Terms of Use', href: '#' },
