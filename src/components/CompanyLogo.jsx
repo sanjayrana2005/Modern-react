@@ -9,7 +9,7 @@ function CompanyLogo() {
   const logo = [slack,amazon,wooCommerce,meundies,sitepoint]
   return (
 
- <section className='px-4 sm:px-6 lg:px-24 bg-red-500'>
+ <section className='px-4 sm:px-6 lg:px-24'>
      <div className='w-full container mx-auto py-20 flex sm:flex-row flex-col gap-8 sm:items-center items-start overflow-hidden'>
         <div className='w-[300px] text-gray-600 border-l-4 border-blue-500 bg-white px-4 py-2 z-10 ssm:text-base text-xl font-semibold text-left'>Proud Partner at <br /> Hubspot & Segment</div>
 

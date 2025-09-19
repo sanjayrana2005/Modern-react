@@ -4,7 +4,7 @@ import { features } from '../assets/data'
 function PurposeSection() {
 
     return (
-        <section className='w-full bg-gray-00 py-16 px-4 sm:px-6 lg:px-24'>
+        <section className='w-full bg-gray-00 py-16 px-4 sm:px-6 lg:px-24 bg-gray-100'>
             <div className='max-w-6xl container mx-auto'>
                 <div className='grid md:grid-cols-3 grid-cols-1 gap-8'>
                     <div className=''>
@@ -17,8 +17,8 @@ function PurposeSection() {
                     <div className='col-span-2 grid grid-cols-1 md:grid-cols-2 justify-between gap-6'>
                     {
                         features.map((feature, index) => {
-                            return <div key={index} className='flex items-start space-x-4'>
-                                <div className=' rounded-lg flex text-center justify-start'>
+                            return <div key={index} className='flex space-x-1 '>
+                                <div className=' rounded-lg flex text-center'>
                                     {feature.icon}
                                 </div>
                                 <div>

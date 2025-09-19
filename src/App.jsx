@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import CompanyLogo from './components/CompanyLogo'
 import './App.css'
 import PurposeSection from './components/PurposeSection'
+import FeaturesSection from './components/FeaturesSection'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Hero />
         <CompanyLogo/>
         <PurposeSection/>
+        <FeaturesSection/>
       </div>
     </main>
   )
