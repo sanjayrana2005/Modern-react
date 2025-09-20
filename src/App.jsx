@@ -10,6 +10,7 @@ import MonitorSection from './components/MonitorSection'
 import PricingSection from './components/PricingSection'
 import ServicesSection from './components/ServicesSection'
 import TestimonialSection from './components/TestimonialSection'
+import NewsLetterSection from './components/NewsLetterSection'
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
         <PricingSection/>
         <ServicesSection/>
         <TestimonialSection/>
+        <NewsLetterSection/>
       </div>
     </main>
   )
