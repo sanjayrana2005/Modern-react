@@ -10,7 +10,7 @@ function MonitorSection() {
                 <div className='w-full md:w-1/2'>
                     <p className='text-green-500 font-semibold'>MONITOR</p>
                     <h2 className='font-bold text-3xl md:text-4xl text-neutral-900 mt-2 mb-5 md:w-4/5'>Introducing best mobile carousels</h2>
-                    <p className='text-gray-600 mb-6'>Before the ship is really back, Round, all round the world. <br/>Round, Round, all round the world. all round the world</p>
+                    <p className='text-gray-600 mb-6'>Take control of your time and boost productivity with our intelligent scheduling system. Automate appointments, manage team availability, and deliver exceptional customer experiemce through seamless calander management.</p>
 
                     <a href="#" className='flex items-center font-semibold text-blue-500 gap-2 hover:gap-4 transition-all w-fit'>Explore scheduling features <ArrowRight size={20} />
                     </a>
