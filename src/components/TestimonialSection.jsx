@@ -5,10 +5,12 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation'
 import { testimonials } from "../assets/data.js"
+import { motion } from "motion/react"
 
 
 import { Navigation } from 'swiper/modules';
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
+import { fadeIn } from '../../Utils/motion.js';
 const TestimonialSection = () => {
     return (
         <section id="testimonials" className='px-4 md:px-6 lg:px-24 w-full' >
@@ -19,7 +21,11 @@ const TestimonialSection = () => {
                 </div>
 
                 {/* cards section*/}
-                <div className='relative mt-5'>
+                <motion.div
+                    variants={fadeIn("right", 0.4)}
+                    initial="hidden"
+                    whileInView="show"
+                    className='relative mt-5'>
                     {/* swiper cards  */}
                     <Swiper
                         modules={[Navigation]}
@@ -53,8 +59,8 @@ const TestimonialSection = () => {
                                                 className='w-full h-full object-cover rounded-full'
                                             />
                                         </div>
-                                        <div className='flex justify-center mb-2'>{[...Array(5)].map((_,index)=>(
-                                        <span key={index} className='text-yellow-400'>★</span>
+                                        <div className='flex justify-center mb-2'>{[...Array(5)].map((_, index) => (
+                                            <span key={index} className='text-yellow-400'>★</span>
                                         ))}</div>
                                         <h3 className='text-xl font-semibold mb-3 '>{testimonial.name}</h3>
                                         <p className='text-gray-600'>{testimonial.text}</p>
@@ -72,7 +78,7 @@ const TestimonialSection = () => {
                             <BsChevronRight size={16} />
                         </button>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </section>
     )

@@ -30,7 +30,6 @@ function PurposeSection() {
                     }
                     </div>
                     <div>
-
                     </div>
                 </div>
             </div>

@@ -1,5 +1,7 @@
 import React from 'react'
 import { features2 } from '../assets/data'
+import { motion } from "motion/react"
+import { scale } from '../../Utils/motion'
 
 function FeaturesSection() {
     return (
@@ -14,11 +16,16 @@ function FeaturesSection() {
                     {
                         features2.map((feature2, index) => {
                             return <div key={index} className='flex flex-col items-center text-center'>
-                                <div className='w-18 h-18 rounded-full flex items-center justify-center' style={{ backgroundColor: index === 0 ? "#F1EFFD" : index === 1 ? "#FEE7E7" : "#FFF3E4" }}>
-                                    <div className='text-3x'>
+                                <motion.div 
+                                variants={scale(0.3)}
+                                        initial="hidden"
+                                        whileInView="show"
+                                className='w-18 h-18 rounded-full flex items-center justify-center' style={{ backgroundColor: index === 0 ? "#F1EFFD" : index === 1 ? "#FEE7E7" : "#FFF3E4" }}>
+                                    <div
+                                        className='text-3x'>
                                         {feature2.icon}
                                     </div>
-                                </div>
+                                </motion.div>
                                 <h2 className='text-2xl font-semibold'>{feature2.title}</h2>
                                 <p className='text-center'>{feature2.description}</p>
                             </div>

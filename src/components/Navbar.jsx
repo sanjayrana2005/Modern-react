@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { Menu, X } from "lucide-react"
+import { motion } from "motion/react"
+import { fadeIn } from '../../Utils/motion'
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -13,7 +15,12 @@ const Navbar = () => {
         { href: "#testimonials", label: "Testimonials" },
     ]
     return (
-        <nav className='fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm border-b z-50 border-gray-100 shadow-sm'>
+        <motion.nav
+            variants={fadeIn("down",0.2)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className='fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm border-b z-50 border-gray-100 shadow-sm'>
 
             <div className='container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-24 md:h-20 h-16'>
                 {/* logo */}
@@ -72,7 +79,7 @@ const Navbar = () => {
                 )
             }
 
-        </nav>
+        </motion.nav>
     )
 }
 

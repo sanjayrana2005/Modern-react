@@ -11,6 +11,7 @@ import PricingSection from './components/PricingSection'
 import ServicesSection from './components/ServicesSection'
 import TestimonialSection from './components/TestimonialSection'
 import NewsLetterSection from './components/NewsLetterSection'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
         <ServicesSection/>
         <TestimonialSection/>
         <NewsLetterSection/>
+        <Footer/>
       </div>
     </main>
   )

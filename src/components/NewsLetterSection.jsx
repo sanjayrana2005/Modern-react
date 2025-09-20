@@ -2,7 +2,7 @@ import React from 'react'
 import { ArrowRight } from "lucide-react";
 function NewsLetterSection() {
     return (
-        <section className='px-4 md:px-6 py-16 lg:px-24'>
+        <section className='px-4 md:px-6 py-16 lg:px-24' id='newsletter'>
             <div className='container mx-auto'>
                 <div className='bg-blue-600 rounded-2xl overflow-hidden'>
                     <div className='relative px-6 md:px-16 py-16 md:py-24'>
